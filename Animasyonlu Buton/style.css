@@ -1,0 +1,30 @@
+body{
+    background-color: #b8b5dd;
+    margin: 0;
+    padding: 0; /*bu ikisini body' de 0 yazmamız tüm elemanları köşeye sıkıştırır */
+}
+.btn{
+    width: 200px;
+    height: 60px;
+    background-color: #ffc107;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /* tam ortaya hizalamamızı sağlıyor*/
+    border-radius: 10px;
+}
+.btn::before{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    content:'HOVER ME' ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    transition:  0.3s;
+}
+.btn:hover::before{
+    top: -30px;
+}
+
